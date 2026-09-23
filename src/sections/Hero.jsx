@@ -196,7 +196,7 @@ function Hero() {
               className="mt-8 max-w-2xl text-base leading-8 sm:text-lg"
               style={{ color: "var(--text-secondary)" }}
             >
-              I'm Timi, a Computer Science graduate focused on building
+              I'm Ilupeju Timlehin, a Computer Science graduate focused on building
               practical software solutions across web development,
               artificial intelligence, and cybersecurity.
             </p>

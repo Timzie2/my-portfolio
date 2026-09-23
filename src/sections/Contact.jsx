@@ -104,9 +104,6 @@ function ArrowIcon() {
 }
 
 function Contact() {
-  const handleSubmit = (event) => {
-    event.preventDefault()
-  }
 
   return (
     <section
@@ -379,7 +376,15 @@ function Contact() {
               boxShadow: "var(--shadow-sm)",
             }}
           >
-            <form onSubmit={handleSubmit}>
+            <form
+  action="https://formspree.io/f/xgavyvqe"
+  method="POST"
+>
+    <input
+  type="hidden"
+  name="_next"
+  value="https://my-portfolio-rho-seven-50.vercel.app/#contact"
+/>
               <div className="grid gap-5 sm:grid-cols-2">
                 {/* Name */}
                 <div>
