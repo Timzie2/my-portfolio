@@ -148,7 +148,7 @@ function Hero() {
               LEFT CONTENT
           ================================================= */}
 
-          <div className="animate-fade-in">
+          <div className="animate-fade-up">
             {/* Status */}
             <div className="mb-7 inline-flex items-center gap-3 rounded-full border px-3.5 py-2">
               <span className="relative flex h-2.5 w-2.5">

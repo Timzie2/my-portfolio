@@ -197,7 +197,7 @@ function Certifications() {
           {certifications.map((certificate) => (
             <article
               key={certificate.title}
-              className="group relative overflow-hidden rounded-3xl border p-6 transition-all duration-300 hover:-translate-y-1 sm:p-7"
+              className="certificate-reveal group relative overflow-hidden rounded-3xl border p-6 transition-all duration-300 hover:-translate-y-1 sm:p-7"
               style={{
                 backgroundColor: "var(--bg-card)",
                 borderColor: "var(--border)",

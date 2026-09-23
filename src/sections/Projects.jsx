@@ -1,3 +1,5 @@
+
+
 const projects = [
   {
     number: "01",
@@ -182,18 +184,27 @@ function CodeVisual() {
         </div>
 
         <div className="space-y-2 font-mono text-xs">
-          <p style={{ color: "var(--text-muted)" }}>
-            <span style={{ color: "var(--accent)" }}>const</span>{" "}
-            transcript = audio
-          </p>
-          <p style={{ color: "var(--text-muted)" }}>
-            <span style={{ color: "var(--accent)" }}>const</span>{" "}
-            summary = model(transcript)
-          </p>
-          <p style={{ color: "var(--text-muted)" }}>
-            <span style={{ color: "var(--accent)" }}>return</span>{" "}
-            summary
-          </p>
+          <p
+  className="project-code-line"
+  style={{ color: "var(--text-muted)" }}
+>
+  <span style={{ color: "var(--accent)" }}>const</span>{" "}
+  transcript = audio
+</p>
+          <p
+  className="project-code-line"
+  style={{ color: "var(--text-muted)" }}
+>
+  <span style={{ color: "var(--accent)" }}>const</span>{" "}
+  summary = model(transcript)
+</p>
+          <p
+  className="project-code-line"
+  style={{ color: "var(--text-muted)" }}
+>
+  <span style={{ color: "var(--accent)" }}>return</span>{" "}
+  summary
+</p>
         </div>
       </div>
     </div>
@@ -212,7 +223,7 @@ function WorkVisual() {
       />
 
       <div
-        className="absolute left-[12%] top-[22%] w-[76%] rounded-2xl border p-5 shadow-[var(--shadow-md)]"
+        className="project-float absolute left-[12%] top-[22%] w-[76%] rounded-2xl border p-5 shadow-[var(--shadow-md)]"
         style={{
           backgroundColor: "var(--bg-card)",
           borderColor: "var(--border)",
@@ -306,7 +317,7 @@ function SystemVisual() {
             style={{ borderColor: "var(--border)" }}
           >
             <div
-              className="mb-3 h-7 rounded-lg"
+              className="project-pulse mb-3 h-7 rounded-lg"
               style={{ backgroundColor: "var(--accent-soft)" }}
             />
             <div className="space-y-2">
@@ -408,14 +419,14 @@ function CloudVisual() {
       </div>
 
       <div
-        className="absolute left-[16%] top-[24%] h-2 w-2 rounded-full"
-        style={{ backgroundColor: "var(--accent)" }}
-      />
+  className="project-pulse absolute left-[16%] top-[24%] h-2 w-2 rounded-full"
+  style={{ backgroundColor: "var(--accent)" }}
+/>
 
       <div
-        className="absolute right-[18%] top-[30%] h-2 w-2 rounded-full"
-        style={{ backgroundColor: "var(--accent)" }}
-      />
+  className="project-pulse absolute right-[18%] top-[30%] h-2 w-2 rounded-full"
+  style={{ backgroundColor: "var(--accent)" }}
+/>
 
       <div
         className="absolute bottom-[22%] left-[28%] h-1.5 w-1.5 rounded-full"
@@ -492,8 +503,8 @@ function Projects() {
         <div className="grid gap-7 md:grid-cols-2">
           {projects.map((project) => (
             <article
-              key={project.title}
-              className="group overflow-hidden rounded-3xl border"
+  key={project.title}
+  className="group overflow-hidden rounded-3xl border transition-all duration-500 hover:-translate-y-2 hover:shadow-[var(--shadow-lg)]"
               style={{
                 backgroundColor: "var(--bg-card)",
                 borderColor: "var(--border)",
@@ -511,7 +522,7 @@ function Projects() {
                 <ProjectVisual type={project.visual} />
 
                 <div
-                  className="absolute left-5 top-5 flex h-10 w-10 items-center justify-center rounded-xl border text-xs font-semibold"
+                  className="absolute left-5 top-5 flex h-10 w-10 items-center justify-center rounded-xl border text-xs font-semibold transition-all duration-500 group-hover:scale-110 group-hover:border-[var(--accent)] group-hover:text-[var(--accent)]"
                   style={{
                     backgroundColor: "var(--bg-card)",
                     borderColor: "var(--border)",

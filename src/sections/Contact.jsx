@@ -151,7 +151,7 @@ function Contact() {
     >
       {/* Background glow */}
       <div
-        className="pointer-events-none absolute left-1/2 top-10 h-[30rem] w-[30rem] -translate-x-1/2 rounded-full blur-3xl"
+        className="contact-glow pointer-events-none absolute left-1/2 top-10 h-[30rem] w-[30rem] -translate-x-1/2 rounded-full blur-3xl"
         style={{ backgroundColor: "var(--accent-soft)" }}
       />
 

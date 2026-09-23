@@ -252,6 +252,34 @@ textarea {
   animation: fade-in 0.8s ease-out both;
 }
 
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.7s ease-out both;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 /* =========================================================
    ACCESSIBILITY
@@ -267,6 +295,136 @@ button:focus-visible,
 input:focus-visible,
 textarea:focus-visible {
   border-radius: 8px;
+}
+
+/* Project visual animations */
+
+@keyframes project-code-line {
+  0% {
+    opacity: 0;
+    transform: translateX(-12px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes project-pulse {
+  0%,
+  100% {
+    opacity: 0.45;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.08);
+  }
+}
+
+@keyframes project-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.project-code-line {
+  opacity: 0;
+  animation: project-code-line 0.6s ease-out forwards;
+}
+
+.project-code-line:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.project-code-line:nth-child(2) {
+  animation-delay: 0.25s;
+}
+
+.project-code-line:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.project-pulse {
+  animation: project-pulse 2.2s ease-in-out infinite;
+}
+
+.project-float {
+  animation: project-float 3s ease-in-out infinite;
+}
+
+@keyframes timeline-draw {
+  from {
+    transform: scaleY(0);
+    transform-origin: top;
+  }
+
+  to {
+    transform: scaleY(1);
+    transform-origin: top;
+  }
+}
+
+.experience-timeline-line {
+  animation: timeline-draw 1.8s ease-out both;
+}
+
+@keyframes certificate-reveal {
+  from {
+    opacity: 0;
+    transform: translateX(-24px);
+    clip-path: inset(0 100% 0 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.certificate-reveal {
+  animation: certificate-reveal 0.9s ease-out both;
+}
+
+.certificate-reveal:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.certificate-reveal:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.certificate-reveal:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.certificate-reveal:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+@keyframes contact-glow {
+  0%,
+  100% {
+    opacity: 0.45;
+    transform: translateX(-50%) scale(1);
+  }
+
+  50% {
+    opacity: 0.75;
+    transform: translateX(-50%) scale(1.08);
+  }
+}
+
+.contact-glow {
+  animation: contact-glow 5s ease-in-out infinite;
 }
 
 

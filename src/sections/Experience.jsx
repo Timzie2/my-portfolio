@@ -237,9 +237,9 @@ function Experience() {
         <div className="relative">
           {/* Desktop vertical line */}
           <div
-            className="absolute bottom-8 left-6 top-8 hidden w-px md:block"
-            style={{ backgroundColor: "var(--border)" }}
-          />
+  className="experience-timeline-line absolute bottom-8 left-6 top-8 hidden w-px md:block"
+  style={{ backgroundColor: "var(--border)" }}
+/>
 
           <div className="space-y-8">
             {timeline.map((item, index) => (

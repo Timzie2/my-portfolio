@@ -1,3 +1,5 @@
+import Reveal from "../components/Reveal"
+
 const focusAreas = [
   {
     number: "01",
@@ -86,7 +88,8 @@ function About() {
         }}
       />
 
-      <div className="relative mx-auto max-w-6xl">
+      <Reveal>
+  <div className="relative mx-auto max-w-6xl">
         {/* =================================================
             SECTION INTRO
         ================================================= */}
@@ -354,8 +357,9 @@ function About() {
             </span>
           </a>
         </div>
-      </div>
-    </section>
+        </div>
+</Reveal>
+</section>
   )
 }
 
