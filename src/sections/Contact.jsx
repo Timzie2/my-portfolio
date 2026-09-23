@@ -1,3 +1,5 @@
+import { useState } from "react"
+
 function MailIcon() {
   return (
     <svg
@@ -104,6 +106,39 @@ function ArrowIcon() {
 }
 
 function Contact() {
+  const [status, setStatus] = useState("")
+  const [isSubmitting, setIsSubmitting] = useState(false)
+
+  const handleSubmit = async (event) => {
+    event.preventDefault()
+
+    setIsSubmitting(true)
+    setStatus("")
+
+    const form = event.currentTarget
+    const formData = new FormData(form)
+
+    try {
+      const response = await fetch("https://formspree.io/f/xgavyvqe", {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json",
+        },
+      })
+
+      if (response.ok) {
+        setStatus("success")
+        form.reset()
+      } else {
+        setStatus("error")
+      }
+    } catch {
+      setStatus("error")
+    } finally {
+      setIsSubmitting(false)
+    }
+  }
 
   return (
     <section
@@ -376,15 +411,7 @@ function Contact() {
               boxShadow: "var(--shadow-sm)",
             }}
           >
-            <form
-  action="https://formspree.io/f/xgavyvqe"
-  method="POST"
->
-    <input
-  type="hidden"
-  name="_next"
-  value="https://my-portfolio-rho-seven-50.vercel.app/#contact"
-/>
+            <form onSubmit={handleSubmit}>
               <div className="grid gap-5 sm:grid-cols-2">
                 {/* Name */}
                 <div>
@@ -493,6 +520,7 @@ function Contact() {
               {/* Submit */}
               <button
                 type="submit"
+                disabled={isSubmitting}
                 className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-xl px-5 py-3.5 text-sm font-semibold sm:w-auto"
                 style={{
                   backgroundColor: "var(--accent)",
@@ -511,10 +539,29 @@ function Contact() {
                     "translateY(0)"
                 }}
               >
-                Send message
-                <ArrowIcon />
+                {isSubmitting ? "Sending..." : "Send message"}
+{!isSubmitting && <ArrowIcon />}
               </button>
             </form>
+            {status === "success" && (
+  <p
+    className="mt-4 text-sm font-medium"
+    style={{ color: "var(--accent)" }}
+    role="status"
+  >
+    Message sent successfully. Thanks for reaching out!
+  </p>
+)}
+
+{status === "error" && (
+  <p
+    className="mt-4 text-sm font-medium"
+    style={{ color: "#dc2626" }}
+    role="alert"
+  >
+    Something went wrong. Please try again or contact me directly.
+  </p>
+)}
           </div>
         </div>
       </div>
