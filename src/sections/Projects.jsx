@@ -4,7 +4,7 @@ const projects = [
     category: "Artificial Intelligence",
     title: "AI Note Generator",
     description:
-      "An AI-powered application that converts educational speech into text and transforms the transcript into structured, readable notes.",
+  "An AI-powered application that converts educational speech into text and generates structured notes using speech recognition and natural language processing.",
     tags: [
       "Python",
       "Whisper",
@@ -19,7 +19,7 @@ const projects = [
     category: "Web Application",
     title: "WorkConnectr",
     description:
-      "A platform connecting contractors and workers, with features for job posting, hiring, profiles, messaging, saved jobs, and notifications.",
+  "A web platform that connects contractors and workers, with features for job posting, hiring, profiles, messaging, and application management.",
     tags: [
       "React",
       "Node.js",
@@ -35,7 +35,7 @@ const projects = [
     category: "Management System",
     title: "SIWES Management System",
     description:
-      "A collaborative web application designed to support SIWES management workflows, including student information and administrative processes.",
+  "A collaborative web application designed to manage SIWES activities, helping students and administrators organize industrial training information and processes.",
     tags: [
       "React",
       "JavaScript",
@@ -50,7 +50,7 @@ const projects = [
     category: "Cloud Application",
     title: "Cloud Storage Portal",
     description:
-      "A web-based storage platform concept where users can securely sign in and manage stored files, images, videos, and other digital content.",
+  "A cloud-based storage application for authenticated users to upload, organize, and access files such as images, videos, and documents.",
     tags: [
       "React",
       "Node.js",

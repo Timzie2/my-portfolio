@@ -12,11 +12,11 @@ const focusAreas = [
       "Exploring AI-powered applications, automation, speech processing, and machine learning through hands-on projects.",
   },
   {
-    number: "03",
-    title: "Cybersecurity",
-    description:
-      "Developing my understanding of security fundamentals and applying secure thinking to the software I build.",
-  },
+  number: "03",
+  title: "Backend Engineering",
+  description:
+    "Building backend systems, APIs, databases, and server-side functionality for practical applications.",
+},
 ]
 
 function ArrowIcon() {
@@ -164,7 +164,7 @@ function About() {
               style={{ color: "var(--text-secondary)" }}
             >
               My interests span web development, artificial intelligence,
-              and cybersecurity. I've worked on projects ranging from
+              and backend engineering. I've worked on projects ranging from
               AI-powered educational tools to collaborative web applications
               and cloud-based systems.
             </p>

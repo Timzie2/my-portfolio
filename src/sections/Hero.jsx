@@ -198,7 +198,7 @@ function Hero() {
             >
               I'm Ilupeju Timlehin, a Computer Science graduate focused on building
               practical software solutions across web development,
-              artificial intelligence, and cybersecurity.
+              artificial intelligence, and backend engineering.
             </p>
 
             {/* CTA */}
@@ -379,7 +379,7 @@ function Hero() {
                 <p style={{ color: "var(--text-muted)" }}>
                   <span className="text-green-500">08</span>
                   <span className="ml-14 text-green-500">
-                    "Cybersecurity"
+                    "Backend"
                   </span>
                 </p>
 
@@ -410,7 +410,7 @@ function Hero() {
 
               {/* Focus cards */}
               <div className="mt-7 grid grid-cols-3 gap-2">
-                {["Web", "AI", "Security"].map((item) => (
+                {["Web", "AI", "Backend"].map((item) => (
                   <div
                     key={item}
                     className="rounded-xl border px-3 py-3 text-center text-xs font-medium transition duration-300 hover:-translate-y-0.5"

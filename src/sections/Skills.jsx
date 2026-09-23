@@ -29,16 +29,15 @@ const skillGroups = [
   },
   {
     number: "03",
-    title: "AI & Security",
+    title: "Artificial Intelligence",
     description:
       "Areas I'm exploring through projects, training, and hands-on experimentation.",
     skills: [
-      "Artificial Intelligence",
-      "Machine Learning",
-      "Speech-to-Text",
-      "Cybersecurity",
-      "Prompt Engineering",
-    ],
+  "Artificial Intelligence",
+  "Machine Learning",
+  "Speech-to-Text",
+  "Prompt Engineering",
+],
   },
   {
     number: "04",
@@ -239,7 +238,7 @@ function Skills() {
           >
             A growing toolkit shaped by projects, experimentation, and
             continuous learning across software development, artificial
-            intelligence, cybersecurity, and productivity.
+            intelligence, backend engineering, and productivity.
           </p>
         </div>
 
